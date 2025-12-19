@@ -14,6 +14,17 @@ Cảm ơn bạn đã quan tâm đến dự án **Lịch Âm New Tab**! 🎉
 - 🔗 **Lối tắt**: Truy cập nhanh các trang web phổ biến (Facebook, Youtube, Gmail...).
 - 🖼️ **Hình nền đẹp**: Tự động hiển thị hình nền chất lượng cao từ Unsplash.
 
+## ✨ Tính năng Prodomo (New)
+
+![Prodomo Mode](prodomo.png)
+
+Chế độ **Prodomo** giúp bạn quản lý thời gian và sự tập trung hiệu quả hơn:
+
+- ⏱️ **Focus Timer**: Đồng hồ đếm ngược theo phương pháp Pomodoro (Mặc định 25 phút).
+- 🎯 **Goal Setting**: Đặt mục tiêu cụ thể cho phiên làm việc.
+- 📊 **Dashboard**: Theo dõi trạng thái và thời gian hiện tại một cách trực quan.
+- 🌡️ **Atmosphere**: Giao diện tối giản, tập trung vào công việc.
+
 ## Hướng dẫn cài đặt (Developer Mode)
 
 1. Clone repo này về máy: `git clone https://github.com/tanbaycu/lich-am.git`
