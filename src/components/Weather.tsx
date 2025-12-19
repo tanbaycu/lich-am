@@ -30,8 +30,14 @@ export const Weather = () => {
   const fetchWeather = async (lat: number, lon: number) => {
         setLoading(true);
         try {
-            const res = await axios.get(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true`);
-            setWeather(res.data.current_weather);
+            const res = await axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${import.meta.env.VITE_OPENWEATHER_API_KEY}&units=metric&lang=vi`);
+            // Map OpenWeatherMap response to our structure
+            setWeather({
+                temperature: res.data.main.temp,
+                weathercode: mapWeatherCode(res.data.weather[0].id),
+                windspeed: res.data.wind.speed * 3.6, // m/s to km/h
+                location: res.data.name
+            });
         } catch (error) {
             console.error(error);
         } finally {
@@ -39,11 +45,25 @@ export const Weather = () => {
         }
   };
 
+  const mapWeatherCode = (id: number) => {
+      // Map OWM IDs to OpenMeteo codes for existing style logic
+      if (id === 800) return 0; // Clear
+      if (id >= 801 && id <= 804) return 2; // Clouds
+      if (id >= 300 && id <= 531) return 61; // Rain
+      if (id >= 200 && id <= 232) return 95; // Thunderstorm
+      if (id >= 600 && id <= 622) return 71; // Snow
+      if (id >= 700 && id <= 781) return 45; // Fog/Atmosphere
+      return 1;
+  };
+
   const requestLocation = () => {
       if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(
             (p) => fetchWeather(p.coords.latitude, p.coords.longitude),
-            () => fetchWeather(21.0285, 105.8542)
+            (e) => {
+                console.warn("Geolocation denied/error, defaulting to Hanoi", e);
+                fetchWeather(21.0285, 105.8542);
+            }
         );
       } else {
            fetchWeather(21.0285, 105.8542);
@@ -73,7 +93,7 @@ export const Weather = () => {
                                 </span>
                              </div>
                              <span className="text-[10px] font-mono text-white/60 tracking-[0.2em] mt-2 uppercase">
-                                 HANOI {/* Dynamic location would be better but keeping simple for now */}
+                                 {weather.location.toUpperCase()}
                              </span>
                         </div>
                         <div className="relative z-10 animate-float">
