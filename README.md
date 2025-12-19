@@ -14,16 +14,31 @@ Cảm ơn bạn đã quan tâm đến dự án **Lịch Âm New Tab**! 🎉
 - 🔗 **Lối tắt**: Truy cập nhanh các trang web phổ biến (Facebook, Youtube, Gmail...).
 - 🖼️ **Hình nền đẹp**: Tự động hiển thị hình nền chất lượng cao từ Unsplash.
 
-## ✨ Tính năng Prodomo (New)
+## 🚀 Prodomo Focus System (New v2.0)
 
-![Prodomo Mode](prodomo.png)
+Hệ thống tập trung **Prodomo** đã được nâng cấp toàn diện giúp bạn quản lý năng lượng và công việc hiệu quả hơn:
 
-Chế độ **Prodomo** giúp bạn quản lý thời gian và sự tập trung hiệu quả hơn:
+### 📸 Giao diện Prodomo
 
-- ⏱️ **Focus Timer**: Đồng hồ đếm ngược theo phương pháp Pomodoro (Mặc định 25 phút).
-- 🎯 **Goal Setting**: Đặt mục tiêu cụ thể cho phiên làm việc.
-- 📊 **Dashboard**: Theo dõi trạng thái và thời gian hiện tại một cách trực quan.
-- 🌡️ **Atmosphere**: Giao diện tối giản, tập trung vào công việc.
+| Timer                                  | Stats                                  |
+| -------------------------------------- | -------------------------------------- |
+| ![Timer](public/screenshots/timer.png) | ![Stats](public/screenshots/stats.png) |
+
+| Tasks                                  | Studio                                   |
+| -------------------------------------- | ---------------------------------------- |
+| ![Tasks](public/screenshots/tasks.png) | ![Studio](public/screenshots/studio.png) |
+
+### ✨ Tính năng chính
+
+- ⏱️ **Focus Timer**: Đồng hồ Pomodoro tùy chỉnh, giao diện Minimalist.
+- 🎨 **Studio**: Tùy chỉnh không gian làm việc với âm thanh (Soundscapes) và hình nền động (Visual Theme).
+- 📊 **Analytics**: Theo dõi biểu đồ tập trung, streak hàng ngày và lịch sử làm việc.
+- ✅ **Task Master**: Quản lý Todolist tích hợp ngay trong phiên làm việc.
+
+### 🌟 Credits
+
+- **Backgrounds**: Hiệu ứng nền tuyệt đẹp được cung cấp bởi [ReactBits](https://reactbits.dev/).
+- **Icons**: Lucide React.
 
 ## Hướng dẫn cài đặt (Developer Mode)
 

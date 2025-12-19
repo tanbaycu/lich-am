@@ -1,5 +1,9 @@
 export const THEMES = [
     { id: 'aurora', name: 'Aurora', color: 'bg-gradient-to-br from-cyan-500 to-blue-500', bgClass: 'bg-black' },
+    { id: 'grid-motion', name: 'Grid Motion', color: 'bg-gradient-to-br from-purple-500 to-pink-500', bgClass: 'bg-black' },
+    { id: 'beams', name: 'Beams', color: 'bg-white', bgClass: 'bg-black' },
+    { id: 'lightning', name: 'Lightning', color: 'bg-blue-600', bgClass: 'bg-black' },
+    { id: 'prismatic', name: 'Prismatic', color: 'bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500', bgClass: 'bg-black' },
 ];
 
 interface ThemeSwitcherProps {
