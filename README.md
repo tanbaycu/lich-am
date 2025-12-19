@@ -1,30 +1,38 @@
 # Lịch Âm New Tab Extension
 
-## Giới thiệu
-<img width="1920" height="854" alt="image" src="https://github.com/user-attachments/assets/ec33a5c8-b66c-4df3-aace-d3d5d122d366" />
+Cảm ơn bạn đã quan tâm đến dự án **Lịch Âm New Tab**! 🎉
 
-Extension Chrome thay thế trang New Tab mặc định bằng giao diện đẹp mắt hiển thị:
-![alt text](image.png)
-- Giờ và Ngày Dương lịch.
-- Ngày Âm lịch Việt Nam.
-- Hình nền ngẫu nhiên chất lượng cao.
+Đây là một Chrome Extension giúp thay thế trang New Tab mặc định bằng một giao diện hiện đại, đậm chất Việt Nam.
 
-## Cách cài đặt (Developer Mode)
+![Screenshot](screenshot.png)
 
-1. Mở Chrome, truy cập vào `chrome://extensions`.
-2. Bật chế độ **Developer mode** (Góc trên bên phải).
-3. Nhấn vào nút **Load unpacked**.
-4. Chọn thư mục `c:\Users\ACER\licham\dist` (Lưu ý: Chọn thư mục `dist` sau khi đã build).
-   - Nếu chưa thấy thư mục `dist`, hãy chạy lệnh `npm run build` trong thư mục dự án.
+## Tính năng nổi bật
 
-## Phát triển
+- 🌕 **Lịch Âm Dương**: Xem ngày giờ dương lịch và âm lịch chi tiết ngay trên màn hình chính.
+- 🌤️ **Thời tiết**: Cập nhật thông tin thời tiết địa phương theo thời gian thực (Nhiệt độ, độ ẩm, sức gió...).
+- 🧘 **Zen Mode**: Chế độ tập trung, ẩn bớt các thành phần không cần thiết.
+- 🔗 **Lối tắt**: Truy cập nhanh các trang web phổ biến (Facebook, Youtube, Gmail...).
+- 🖼️ **Hình nền đẹp**: Tự động hiển thị hình nền chất lượng cao từ Unsplash.
 
-- Chạy `npm run dev` để xem thử trên trình duyệt (Lưu ý: Chế độ dev không load như extension thật 100% về mặt API chrome, nhưng giao diện thì xem được).
-- Chạy `npm run build` để đóng gói extension.
+## Hướng dẫn cài đặt (Developer Mode)
+
+1. Clone repo này về máy: `git clone https://github.com/tanbaycu/lich-am.git`
+2. Tạo file `.env` từ file mẫu:
+   - Copy file `.env.example` thành `.env`.
+   - Điền API Key OpenWeatherMap của bạn vào dòng `VITE_OPENWEATHER_API_KEY=...`.
+3. Cài đặt thư viện: `npm install`
+4. Build dự án: `npm run build`
+5. Cài vào Chrome:
+   - Mở `chrome://extensions`.
+   - Bật **Developer mode** (Góc phải trên).
+   - Chọn **Load unpacked** -> trỏ tới thư mục `dist` vừa build.
 
 ## Tech Stack
 
-- React + Vite + TypeScript
-- TailwindCSS v4
-- lunar-date-vn (Lịch âm)
-- date-fns (Xử lý ngày tháng)
+- **Core**: React 18, TypeScript, Vite.
+- **Styling**: TailwindCSS.
+- **Libs**: `lunar-date-vn` (Lịch âm), `date-fns`, `axios`.
+
+---
+
+_Dự án được phát triển bởi [tanbaycu](https://github.com/tanbaycu)._
