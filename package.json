@@ -16,7 +16,7 @@
     "axios": "^1.13.2",
     "date-fns": "^4.1.0",
     "gsap": "^3.14.2",
-    "lucide-react": "^0.561.0",
+    "lucide-react": "^0.562.0",
     "lunar-date-vn": "^1.0.6",
     "lunisolar": "^2.6.0",
     "ogl": "^1.0.11",
