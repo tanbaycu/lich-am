@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Clock } from './components/Clock';
 import { Prodomo } from './components/ProdomoFeature';
 import { Background } from './components/Background';
-import { LunarInfo } from './components/LunarInfo';
+
 import { Weather } from './components/Weather';
 import { Focus } from './components/Focus';
 import { Dock } from './components/Dock';
@@ -65,7 +65,7 @@ function App() {
           </div>
 
           {/* Bottom Area */}
-          <LunarInfo /> 
+
           
           <Dock />
           
