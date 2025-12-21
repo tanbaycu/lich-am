@@ -65,4 +65,4 @@ _Dự án được phát triển bởi [tanbaycu](https://github.com/tanbaycu)._
 
 ### Special Thanks
 
-- [phufka](https://github.com/phufka) - Contributor
+- [codoidieu](https://github.com/codoidieu) - Contributor
